@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.snynzmd.shop.activity.InventoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:id="@+id/ll_ac_inventory_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/title_back_image" />
+
+                <TextView
+                    style="@style/title_back_text" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/title_text"
+                android:text="库存" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/devider" />
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <LinearLayout
+            style="@style/list_title">
+
+            <TextView
+                android:text="商品名称"
+                android:layout_weight="2"
+                style="@style/list_title_item"
+                />
+
+            <include layout="@layout/devider_horizontal"></include>
+
+            <TextView
+                android:text="批号"
+                android:layout_weight="1"
+                style="@style/list_title_item"
+                />
+
+            <include layout="@layout/devider_horizontal"></include>
+
+            <TextView
+                android:text="数量"
+                android:layout_weight="1"
+                style="@style/list_title_item"
+                />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_shop_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="@string/shop_title"
+            android:textColor="@color/app_main"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <include layout="@layout/devider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.youth.banner.Banner
+            android:id="@+id/b_shop_tops"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp">
+
+            <com.snynzmd.shop.view.H2WRelativeLayout
+                android:layout_width="wrap_content"
+                android:padding="8dp"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@mipmap/shop_notify"/>
+
+            </com.snynzmd.shop.view.H2WRelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:text="通知" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <!--第一行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_chargemanage"
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_czzx"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="充值中心"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_shop_billmanage"
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_ddgl"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="订单管理"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_smrk"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="扫码入库"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--第二行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_ddhx"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="代垫核销"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        android:id="@+id/h2w_vip_return_good"
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_mdth"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="门店退货"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_mddb"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="门店调拨"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--第三行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_mdzx"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="门店咨讯"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image"
+                            android:src="@mipmap/shop_menu_ggl"/>
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"
+                        android:text="广告类"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/shop_menu_background"
+                    >
+
+                    <com.snynzmd.shop.view.H2WRelativeLayout
+                        style="@style/shop_menu_image_background">
+
+                        <ImageView
+                            style="@style/shop_menu_image" />
+
+                    </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                    <TextView
+                        style="@style/shop_menu_text"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:src="@drawable/app_main_top" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/v_vip_bar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center"
+            android:text="会员管理"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@drawable/vip_menu"
+            android:elevation="4dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:orientation="vertical">
+
+            <!--第一行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        android:id="@+id/h2w_vip_regist"
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_xzzc" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="协助注册" />
+
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        android:id="@+id/h2w_vip_exchange"
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_xzdh" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="协助兑换" />
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--第二行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_jfck" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="积分出库" />
+
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        android:id="@+id/h2w_vip_bill"
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_hydd" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="会员订单" />
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--第三行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_hyth" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="会员退货" />
+
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_wdhy" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="我的会员" />
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+            <!--第四行-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        android:id="@+id/h2w_vip_trace"
+                        style="@style/vip_menu_background"
+                        android:elevation="4dp">
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:src="@mipmap/vip_menu_cpzs" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text"
+                            android:text="产品追溯" />
+
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/vip_menu_background_out">
+
+                    <com.snynzmd.shop.view.H2WLinearLayout
+                        style="@style/vip_menu_background" >
+
+                        <com.snynzmd.shop.view.H2WRelativeLayout style="@style/vip_menu_image_background">
+
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+
+                        </com.snynzmd.shop.view.H2WRelativeLayout>
+
+                        <TextView
+                            style="@style/vip_menu_text" />
+
+                    </com.snynzmd.shop.view.H2WLinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

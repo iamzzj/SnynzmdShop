@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_navigation_shop"
+        android:title="门店"
+        android:icon="@mipmap/menu_shop"
+        />
+    <item
+        android:id="@+id/menu_navigation_vip"
+        android:title="会员"
+        android:icon="@mipmap/menu_vip"
+        />
+    <item
+        android:id="@+id/menu_navigation_table"
+        android:title="报表"
+        android:icon="@mipmap/menu_table"
+        />
+    <item
+        android:id="@+id/menu_navigation_my"
+        android:title="我的"
+        android:icon="@mipmap/menu_my"
+        />
+
+</menu>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.snynzmd.shop.activity.MyAssistantActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <LinearLayout
+                android:id="@+id/ll_ac_myassistant_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    style="@style/title_back_image" />
+
+                <TextView
+                    style="@style/title_back_text" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/title_text"
+                android:text="我的店员" />
+
+        </RelativeLayout>
+
+        <include layout="@layout/devider" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_margin="12dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/my_assistant_top_background"
+        android:layout_height="30dp">
+
+        <Button
+            android:id="@+id/btn_ac_myassistant_used"
+            android:text="可使用"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_assistant_top_selector"/>
+
+        <Button
+            android:id="@+id/btn_ac_myassistant_unused"
+            android:text="已停用"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:background="@drawable/my_assistant_top_selector"/>
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_ac_myassistant_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

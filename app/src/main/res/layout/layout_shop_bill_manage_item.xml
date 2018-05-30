@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/manage_background"
+        android:layout_height="60dp">
+
+        <ImageView
+            android:id="@+id/iv_shop_bill_manage_item_image"
+            android:layout_height="60dp"
+            android:layout_width="60dp"
+            android:src="@mipmap/shop_bill_manage_zc"
+            style="@style/manage_image" />
+
+        <TextView
+            android:id="@+id/tv_shop_bill_manage_item_name"
+            style="@style/manage_text"
+            android:text="" />
+
+        <ImageView
+            style="@style/manage_image"
+            android:src="@mipmap/more" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

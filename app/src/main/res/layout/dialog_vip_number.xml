@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/white_dialog_radius"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        android:text="请输入会员手机号"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/et_dialog_vip_number_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/vip_number"
+        android:gravity="center"
+        android:inputType="number"
+        android:lines="1"
+        android:maxLength="11"
+        android:paddingBottom="8dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+    <include layout="@layout/devider" />
+
+    <TextView
+        android:id="@+id/tv_dialog_vip_number_sure"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="16dp"
+        android:text="确定"
+        android:textColor="@color/app_main"
+        android:textSize="16sp" />
+
+
+</LinearLayout>
